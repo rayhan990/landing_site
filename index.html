@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	    <title>SipSuggest - AI based drink suggestions</title>
+	    <meta name="description" content="Drinks suggestions tailored to individuals tastes. Wine pairing.">
+	    <link rel="canonical" href="https://sip-suggest.com/">
+	    <link rel="stylesheet" href="./styles.css">
+	    <script type="application/ld+json">
+	    {
+	      "@context": "https://schema.org",
+	      "@type": "WebPage",
+	      "name": "AI based drink suggestions",
+	      "description": "Drinks suggestions tailored to individuals tastes. Wine pairing.",
+	      "url": "https://sip-suggest.com"
+	    }
+	    </script>
+	</head>
+
+	<body class="">
+		<div class="fullwidth bgimage center colorwhite">
+			<div class="container">
+		    <div class="column center front">
+					<img src="logo.png" alt="logo" id='logo'>
+					<h2>SIP SUGGEST</h2>
+				</div>
+				<div class="front column">
+					<h2>Fancy AI Drink?</h2>
+		    	<p class="tagline">
+		    		Sip Suggest, Your personal AI-Mixologist
+		    	</p>
+		    	<p>
+		    		Reordering the same drinks over and over again?
+		    	</p>
+		    	<p>
+		    		Did you know there are 1300+ wines, 1000+ cocktails, 100+ beers?
+		    	</p>
+				</div>
+			</div>
+			<div class="blackTransparent"></div>
+		</div>
+
+		<div class="fullwidth bgcolor">
+			<section class="curved red"></section>
+		</div>
+
+		<div class="container">
+			<section class="curved blue"></section>
+	    <div class="column">
+	    	<video class="video" controls>
+				  <source src="intro.mp4" type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
+	    </div>
+	    <div class="column">
+				<h2 class="">Register your interest</h2>
+				<p>We will notify you when the application is ready.</p>
+	    	<form id="theForm" method="post" action="http://localhost:3000/">
+	    		<input class="fullwidth" type="text" name="name" id="name" placeholder="Name" onKeyUp="checkName(this)">
+	    		<input class="fullwidth" type="text" name="email" id="email" placeholder="Email" onKeyUp="checkEmail(this)">
+				  <input class="fullwidth" type="submit" name="submit" id="submit" disabled>
+	    	</form>
+	    	<h3 id="opTag"></h3>
+	    </div>
+		</div>
+
+
+		<div class="fullwidth red">
+			<section class="curved bgcolor"></section>
+		</div>
+
+		<section class="curved red"></section>
+		<div class="container fullwidth ">
+			<div class="column center">
+				<p>Drinks suggestions tailored to individuals tastes.</p>
+				<img class="screen" src="./screen1.png" alt="screenshot-1">
+			</div>
+			<div class="column center">
+				<p>Instafinder, Favourites always on top of every menu.</p>
+				<img class="screen" src="./screen3.png" alt="screenshot-1">
+			</div>
+			<div class="column center">
+				<p>Your recipes always with you!</p>
+				<img class="screen" src="./screen2.png" alt="screenshot-1">
+			</div>
+		</div>
+	  <script src="./script.js"></script>
+	</body>
+</html>
