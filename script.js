@@ -8,7 +8,7 @@ function submitForm(event) {
    event.preventDefault();
    const data = new FormData(document.getElementById("theForm"));
 
-   fetch("/", { method: "post", body: data })
+   fetch("/post", { method: "post", body: data })
    .then(res => {
       if(res.status==400 || res.status==500){
          throw "Something wrong!";
